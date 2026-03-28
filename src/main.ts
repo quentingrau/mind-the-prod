@@ -1,4 +1,3 @@
-import { invoke } from "@tauri-apps/api/core";
 import { listen } from "@tauri-apps/api/event";
 
 async function main() {
@@ -11,11 +10,6 @@ async function main() {
   await listen("safe", () => {
     const body = document.querySelector("body");
     body!.classList.remove("dangerous");
-  });
-
-  // Then start watching the file
-  invoke("watch_file", {
-    path: "/Users/quentingrau/dev/muchbetter/app-back-end/.env",
   });
 }
 

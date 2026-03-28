@@ -61,7 +61,7 @@ A line is considered dangerous if it contains the pattern and is **not** comment
 - [x] File watching with instant detection
 - [x] Red border overlay (transparent, click-through)
 - [x] Startup check (detects danger before any file change)
-- [ ] `config.json` support (multiple files & patterns)
+- [x] `config.json` support (multiple files & patterns)
 - [ ] System tray icon with status indicator
 - [ ] In-app config UI
 - [ ] Auto-start on login
